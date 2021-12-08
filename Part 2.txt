@@ -1,0 +1,26 @@
+#In this part I will develop my own function, to deal with some interesting math problem.
+
+#I will write a function that calculate the area of a square or rectangle and tell if it is a square or a retangle.
+
+def calculation(side_a, side_b):
+    area = side_a * side_b
+    if side_a == side_b: #one property of the square is that the both sides are the same lenght.
+        return (str(area) + ' and this is a square')
+    else:
+        return (str(area) + ' and this is a rectangle')
+
+def main():
+    print('the area of a square side 2 and 2 should be 4. Result: ' + calculation(2,2))
+    print('the area of a square side 5 and 5 should be 25. Result: ' + calculation(5,5))
+    print('the area of a square side 11 and 11 should be 121. Result: ' + calculation(11,11))
+    print('the area of a rectangle side 11 and 15 should be 165. Result: ' + calculation(11,15))
+    print('the area of a square side 40 and 20 should be 800. Result: ' + calculation(40,20))
+    
+
+main()
+
+#First problem was the same as before, concatenating numbers with strings, since python does not do it implicitly, I will use the funcion 'str()'
+#Some process was faster, since I use this tools a lot in this unit.
+#I have learned to debbug my test with real examples, in the assetment, we should accomplish some tests, and I do it just like that.
+#I learn some syntax of python, like not converting implictly numbers to string when concatenating.
+#Other main subject learned is that the return token is resilient, and suport concatenation, function call, what made composition easier.

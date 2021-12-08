@@ -1,0 +1,30 @@
+#In this task I must to write a code with a function that receives 2 arguments
+#And print the hypotenuse lenght, based in the other 2 legs of the triangle.
+#For base, I will use the path that is presented in the book, and explain the passes of depuration
+
+#In order to make the program easier to test and verify, I will use a model called Incremental Development
+#So, I can debug each bit of the code, and not after programing all
+#Lets do it simple!
+
+import math #Must include this class in order to use its functions
+
+def hypotenuse(x, y): #x and y are legs of the triangle
+    hypotenuse_square = int(x)**2 + int(y)**2 #An intermediate value can hold a variable during the process
+    hypotenuse = math.sqrt(hypotenuse_square)
+    #print(hypotenuse) Used for debugging, scaffolding
+    return hypotenuse
+def main():
+    x = input('write the first leg of the triangle: ')
+    y = input('write the second leg of the triangle: ')
+    result = hypotenuse(x,y)
+    print('the hypotenuse of the triangle is %.2f' % float(result))
+    print('the hypotenuse of 3 and 4 should return 5, and returns: ' + str(hypotenuse(3,4)))
+#At the end, just a verifying print, with the most classical triangle, 3 and 4 legs, and hypotenuse 5 confirms that the function works.
+
+    
+main()
+
+#First error: A syntatic error, I forgot to close the brackets in the print function
+#Second error: TypeError: unsupported operand type(s) for +: 'int' and 'str', I must convert the return of the function hypotenuse as a str to concatenate it properly
+#Third error: I must convert x and y to integers, in order to apply + and other math functions
+#Some error occurs in the process to use new tools to round decimals, and the syntax of 'x^2' was incorrect, but not crashing. It was replaced by x**2
