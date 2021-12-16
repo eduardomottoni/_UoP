@@ -1,0 +1,2 @@
+References:
+Downey, A. (2015). Think python. Green Tea Press. TEXT - Think Python 2e.pdf (uopeople.edu)
