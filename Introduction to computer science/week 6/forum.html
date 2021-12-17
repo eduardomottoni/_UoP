@@ -1,0 +1,42 @@
+<h5>To start the first part, we need two definitions:&nbsp;</h5>
+<div class="text_to_html"><strong>
+Value </strong>is data stored in memory. (textbook, chapter 10)<br>An <strong>Object </strong>is a<span><span><strong>&nbsp;</strong><span><em>space in memory</em></span><strong>&nbsp;</strong></span>
+    </span>that holds information ('memory address', 2017).</div>
+<div class="text_to_html"><em><br></em> A value can be stored in an object, and it has a Type. It can be either <em>integer, float-point, string, character, boolean</em>, a list can hold more of one type of value, like strings, integers, and even other lists.</div>
+<div class="text_to_html"><br> After this brief explanation, I will try to resolve the questions.</div>
+<div class="text_to_html"><br></div>
+<div class="text_to_html"><img src="https://my.uopeople.edu/draftfile.php/1259090/user/draft/583195712/image.png" alt=""><br><br> In this case, objects <strong>a</strong> and <strong>b</strong> are equivalent <em>and </em>identical, equivalent because have the same values and
+    identical because it points to the same <a href="https://www.techopedia.com/definition/323/memory-address#:~:text=A%20memory%20address%20is%20a,location%20of%20each%20memory%20byte.">ram address</a>&nbsp;('memory address', 2017).</div>
+<div class="text_to_html"><br></div>
+<div class="text_to_html">But equivalent and identical is not the same thing, do not believe?</div>
+<div class="text_to_html">Equivalent means that the values stored are the same.</div>
+<div class="text_to_html">Identical means that the ram address is the same, as you can see in the next image.</div>
+<div class="text_to_html"><br></div>
+<div class="text_to_html"><br></div>
+<h5>Before explaining the results, which may be not intuitive, I will define 2 more terms:</h5>
+<div class="text_to_html">
+    <div><strong>Reference </strong>is when a variable points to an object in memory, in the case before the variable <strong>a</strong> references the object [1 , 2].</div>
+    <div>When more than one variable references the same object, as we will see in the next image, we say that this object is <strong>aliased</strong>&nbsp;(textbook, chapter 10.11).</div><br></div>
+<div class="text_to_html"><br></div>
+<div class="text_to_html"><img src="https://my.uopeople.edu/draftfile.php/1259090/user/draft/583195712/image%20%281%29.png" alt=""><br></div>
+<div class="text_to_html"><strong>Is</strong> operator verifies if the objects have the same ram address. See more about it in references or textbook figure 10.4 in chapter 10.</div>
+<div class="text_to_html"><br></div>
+<div class="text_to_html">In the second image, the object [1 , 2] is referenced by the variables 'a' and 'b'. If an object is referenced by more than one variable we say it is aliased. The relation that establishes the aliasing property is 'a == b', in another word, b receive
+    the reference of the same memory address as a ('memory address', 2017), so the objects are <strong>identical</strong>.</div>
+<div class="text_to_html"><br></div>
+<div class="text_to_html">I will not go deep into the <strong>equivalent </strong>concept, since it is trivial. It compares 2 objects and returns if the values inside the objects are the same, figure 10.3 in chapter 10.10 of the textbook.</div>
+<div class="text_to_html"><br></div>
+<h5>For the asked task, I try to compress as much information in an image, and then I will do a brief summary about it.</h5>
+<div class="text_to_html"><img src="https://my.uopeople.edu/draftfile.php/1259090/user/draft/583195712/image%20%283%29.png" alt=""><br></div>
+<div class="text_to_html">The real objects are the lists such [ ], [1,2], [1,2,3] and so on. The <em>references </em>to these real <em>objects </em>in memory. When passed through the function, the list turns into a named <em>argument</em>. Before it, the list is the <em>parameter </em>of
+    the function.</div>
+<div class="text_to_html"><br></div>
+<div class="text_to_html">Thank you for reading, sorry for not being able to commit me more. If you want source code to test feel free to ask me here in the comments.&nbsp;</div>
+<div class="text_to_html"><br></div>
+<div class="text_to_html">References:</div>
+<div class="text_to_html">Downey, A. (2015). <em>Think python. Green Tea Press</em>. Retrieved from&nbsp;<br></div><a href="https://my.uopeople.edu/pluginfile.php/1521257/mod_book/chapter/307716/TEXT%20-%20Think%20Python%202e.pdf">https://my.uopeople.edu/pluginfile.php/1521257/mod_book/chapter/307716/TEXT%20-%20Think%20Python%202e.pdf</a>
+<div
+    class="text_to_html">
+    <p><span>What is a memory address?.&nbsp; (2017, February 15).&nbsp;Retrieved from</span><span style="font-size:1rem;">&nbsp;</span><a href="https://www.techopedia.com/definition/323/memory-address#:~:text=A%20memory%20address%20is%20a,location%20of%20each%20memory%20byte."
+            style="background-color:rgb(255,255,255);font-size:1rem;font-weight:400;">https://www.techopedia.com/definition/323/memory-address#:~:text=A%20memory%20address%20is%20a,location%20of%20each%20memory%20byte.</a></p>
+    </div>
